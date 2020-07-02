@@ -81,6 +81,9 @@ public class Livre {
 		this.auteur = auteur;
 	}
 
+	/**
+	 * toString()
+	 */
 	@Override
 	public String toString() {
 		return "Titre du livre : " + getTitre() + ", Auteur : " + getAuteur();
