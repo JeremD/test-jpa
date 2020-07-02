@@ -49,14 +49,14 @@ public class TestJpa {
 		System.out.println("update --> " + modifLivre.toString());*/
 		
 		//-- Extraire un livre en fonction du titre.
-		String titre = "Du plaisir dans la cuisine";
-		TypedQuery<Livre> queryTitle = entityManager.createQuery("select l from Livre l where l.titre = '" + titre + "'", Livre.class);
+		TypedQuery<Livre> queryTitle = entityManager.createQuery("select l from Livre l where l.titre = = :titre", Livre.class);
+		queryTitle.setParameter("titre", "Du plaisir dans la cuisine");
 		List<Livre> listeLivre = queryTitle.getResultList();
 		listeLivre.forEach(System.out::println);
 		
 		//-- Extraire un livre en fonction de l'auteur.
-		String auteur = "Emile Zola";
-		TypedQuery<Livre> queryAuthor = entityManager.createQuery("select l from Livre l where l.auteur = '" + auteur + "'", Livre.class);
+		TypedQuery<Livre> queryAuthor = entityManager.createQuery("select l from Livre l where l.auteur = :auteur", Livre.class);
+		queryAuthor.setParameter("name", "Emile Zola");
 		List<Livre> listeLivre2 = queryAuthor.getResultList();
 		listeLivre2.forEach(System.out::println);
 		
