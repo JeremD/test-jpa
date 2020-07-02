@@ -23,7 +23,7 @@ public class Livre {
 	@Column(name = "TITRE")
 	private String titre;
 
-	/** autheur */
+	/** auteur */
 	@Column(name = "AUTEUR")
 	private String auteur;
 
