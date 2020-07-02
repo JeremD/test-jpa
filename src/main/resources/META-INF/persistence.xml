@@ -1,0 +1,21 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="pu_essai"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="org.mariadb.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mariadb://bxrkpxzi3naht7j9ry8m-mysql.services.clever-cloud.com:3306/bxrkpxzi3naht7j9ry8m?serverTimezone=Europe/Paris" />
+			<property name="javax.persistence.jdbc.user"
+				value="uetpoe4v9wkawonh" />
+			<property name="javax.persistence.jdbc.password"
+				value="1bqiegs2Mry2Pko6sffi" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
