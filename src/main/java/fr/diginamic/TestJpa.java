@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
- * Hello world!
+ * JPA - TP 01
  *
  */
 public class TestJpa {
