@@ -6,12 +6,12 @@
 			<property name="javax.persistence.jdbc.driver"
 				value="org.mariadb.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mariadb://bxrkpxzi3naht7j9ry8m-mysql.services.clever-cloud.com:3306/bxrkpxzi3naht7j9ry8m?serverTimezone=Europe/Paris" />
+				value="jdbc:mariadb://localhost:3306/bibliotheque?serverTimezone=Europe/Paris" />
 			<property name="javax.persistence.jdbc.user"
-				value="uetpoe4v9wkawonh" />
+				value="root" />
 			<property name="javax.persistence.jdbc.password"
-				value="1bqiegs2Mry2Pko6sffi" />
-			<property name="hibernate.show_sql" value="true" />
+				value="" />
+			<property name="hibernate.show_sql" value="false" />
 		</properties>
 	</persistence-unit>
 </persistence>
