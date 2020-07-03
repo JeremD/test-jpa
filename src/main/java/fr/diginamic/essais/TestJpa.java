@@ -69,7 +69,7 @@ public class TestJpa {
 		entityManager.getTransaction().begin();
 		entityManager.getTransaction().commit();
 		
-		//--Affichage de tous les livres
+		//-- Afficher de tous les livres
 		TypedQuery<Livre> queryLivre = entityManager.createQuery("select l from Livre l", Livre.class);
 		List<Livre> listeLivreAll = queryLivre.getResultList();
 		listeLivreAll.forEach(System.out::println);
