@@ -1,4 +1,4 @@
-package fr.diginamic;
+package fr.diginamic.bibliotheque;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,4 +1,4 @@
-package fr.diginamic;
+package fr.diginamic.bibliotheque;
 
 import java.util.List;
 
