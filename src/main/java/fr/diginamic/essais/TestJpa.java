@@ -34,21 +34,21 @@ public class TestJpa {
 		nouveauLivre.setAuteur("Albert Camus");
 
 		// Execution de la transaction
-		/*entityTransaction.begin();
+		entityTransaction.begin();
 		entityManager.persist(nouveauLivre);
 		entityTransaction.commit();
 		
-		System.out.println("insert --> " + nouveauLivre.toString());*/
+		System.out.println("insert --> " + nouveauLivre.toString());
 				
 		// -- Modifier un livre
-		/*Livre modifLivre = entityManager.find(Livre.class, 5);
+		Livre modifLivre = entityManager.find(Livre.class, 5);
 		modifLivre.setTitre("Du plaisir dans la cuisine");
 		
 		entityTransaction.begin();
 		entityManager.persist(modifLivre);
 		entityTransaction.commit();
 		
-		System.out.println("update --> " + modifLivre.toString());*/
+		System.out.println("update --> " + modifLivre.toString());
 		
 		//-- Extraire un livre en fonction du titre.
 		TypedQuery<Livre> queryTitle = entityManager.createQuery("select l from Livre l where l.titre = = :titre", Livre.class);
