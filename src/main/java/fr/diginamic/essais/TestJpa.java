@@ -27,7 +27,7 @@ public class TestJpa {
 		Livre livre = entityManager.find(Livre.class, 1);
 		System.out.println("find --> " + livre.toString());
 
-		// -- Inserer un livre
+		// -- Insérer un livre
 		Livre nouveauLivre = new Livre();
 		nouveauLivre.setId(6);
 		nouveauLivre.setTitre("L'Étranger");
